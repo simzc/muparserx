@@ -36,7 +36,7 @@
 #define MU_PARSER_IMPL_READER_H
 
 #include "mpIValReader.h"
-
+#include "MupApiCE.h"
 
 
 MUP_NAMESPACE_START
@@ -50,7 +50,7 @@ MUP_NAMESPACE_START
   /** \brief A class for reading floating point values from an expression string.
       \ingroup valreader
   */
-  class DblValReader : public IValueReader
+  class MUP_EXPORT DblValReader : public IValueReader
   {
   public:    
       DblValReader();
@@ -68,7 +68,7 @@ MUP_NAMESPACE_START
   /** \brief A class for reading boolean values from an expression string.
       \ingroup valreader
   */
-  class BoolValReader : public IValueReader
+  class MUP_EXPORT BoolValReader : public IValueReader
   {
   public:    
       BoolValReader();
@@ -86,7 +86,7 @@ MUP_NAMESPACE_START
   /** \brief A class for reading hex values from an expression string.
       \ingroup valreader
   */
-  class HexValReader : public IValueReader
+  class MUP_EXPORT HexValReader : public IValueReader
   {
   public:    
       HexValReader();
@@ -103,7 +103,7 @@ MUP_NAMESPACE_START
   /** \brief A class for reading binary values from an expression string.
       \ingroup valreader
   */
-  class BinValReader : public IValueReader
+  class MUP_EXPORT BinValReader : public IValueReader
   {
   public:    
       BinValReader();
@@ -121,7 +121,7 @@ MUP_NAMESPACE_START
   /** \brief A class for reading strings from an expression string.
       \ingroup valreader
   */
-  class StrValReader : public IValueReader
+  class MUP_EXPORT StrValReader : public IValueReader
   {
   public:    
       StrValReader();

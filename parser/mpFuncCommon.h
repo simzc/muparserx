@@ -36,7 +36,7 @@
 #define MUP_FUNC_COMMON_H
 
 #include "mpICallback.h"
-
+#include "MupApiCE.h"
 
 MUP_NAMESPACE_START
 
@@ -44,7 +44,7 @@ MUP_NAMESPACE_START
   /** \brief Parser function callback for determining the size of an array. 
       \ingroup functions
   */
-  class FunParserID : public ICallback
+  class MUP_EXPORT FunParserID : public ICallback
   {
   public:
     FunParserID ();
@@ -57,7 +57,7 @@ MUP_NAMESPACE_START
   /** \brief Determine maximal value from the parameter list. 
       \ingroup functions
   */
-  class FunMax : public ICallback
+  class MUP_EXPORT FunMax : public ICallback
   {
   public:
     FunMax();
@@ -70,7 +70,7 @@ MUP_NAMESPACE_START
   /** \brief Determine minimal value from the parameter list. 
       \ingroup functions
   */
-  class FunMin : public ICallback
+  class MUP_EXPORT FunMin : public ICallback
   {
   public:
     FunMin();
@@ -83,7 +83,7 @@ MUP_NAMESPACE_START
   /** \brief Parser callback for summing up all function arguments. 
       \ingroup functions
   */  
-  class FunSum : public ICallback
+  class MUP_EXPORT FunSum : public ICallback
   {
   public:
     FunSum();
@@ -96,7 +96,7 @@ MUP_NAMESPACE_START
   /** \brief Parser function callback for determining the size of an array. 
       \ingroup functions
   */
-  class FunSizeOf : public ICallback
+  class MUP_EXPORT FunSizeOf : public ICallback
   {
   public:
     FunSizeOf();

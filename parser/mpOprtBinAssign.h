@@ -53,7 +53,7 @@ MUP_NAMESPACE_START
   
       This operator can only be applied to variable items.
   */
-  class OprtAssign : public IOprtBin
+  class MUP_EXPORT OprtAssign : public IOprtBin
   {
   public:
     
@@ -69,7 +69,7 @@ MUP_NAMESPACE_START
     
       This operator can only be applied to variable items.
   */
-  class OprtAssignAdd : public IOprtBin
+  class MUP_EXPORT OprtAssignAdd : public IOprtBin
   {
   public:
     OprtAssignAdd();
@@ -83,7 +83,7 @@ MUP_NAMESPACE_START
   
       This operator can only be applied to variable items.
   */
-  class OprtAssignSub : public IOprtBin
+  class MUP_EXPORT OprtAssignSub : public IOprtBin
   {
   public:
     OprtAssignSub();
@@ -97,7 +97,7 @@ MUP_NAMESPACE_START
   
       This operator can only be applied to variable items.
   */
-  class OprtAssignMul : public IOprtBin
+  class MUP_EXPORT OprtAssignMul : public IOprtBin
   {
   public:
     OprtAssignMul();
@@ -111,7 +111,7 @@ MUP_NAMESPACE_START
   
       This operator can only be applied to variable items.
   */
-  class OprtAssignDiv : public IOprtBin
+  class MUP_EXPORT OprtAssignDiv : public IOprtBin
   {
   public:
     

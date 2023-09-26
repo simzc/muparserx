@@ -41,7 +41,7 @@ MUP_NAMESPACE_START
 
 //------------------------------------------------------------------------------
 /** \brief Package for installing complex functions and operators. */
-class PackageMatrix : public IPackage
+class MUP_EXPORT PackageMatrix : public IPackage
 {
 friend class std::unique_ptr<PackageMatrix>;
 

@@ -52,7 +52,7 @@ MUP_NAMESPACE_START
   /** \brief Callback for the negative sign operator for noncomplex values.
       \ingroup infix
   */
-  class OprtSign : public IOprtInfix
+  class MUP_EXPORT OprtSign : public IOprtInfix
   {
   public:
     OprtSign();
@@ -65,7 +65,7 @@ MUP_NAMESPACE_START
   /** \brief Callback for the positive sign operator for noncomplex values.
       \ingroup infix
   */
-  class OprtSignPos : public IOprtInfix
+  class MUP_EXPORT OprtSignPos : public IOprtInfix
   {
   public:
     OprtSignPos();
@@ -78,7 +78,7 @@ MUP_NAMESPACE_START
   /** \brief Parser callback for implementing an addition of two noncomplex values.
       \ingroup binop
   */
-  class OprtAdd : public IOprtBin    
+  class MUP_EXPORT OprtAdd : public IOprtBin    
   {
   public:
     OprtAdd();
@@ -91,7 +91,7 @@ MUP_NAMESPACE_START
   /** \brief Parser callback for implementing the subtraction of two noncomplex values.
       \ingroup binop
   */
-  class OprtSub : public IOprtBin    
+  class MUP_EXPORT OprtSub : public IOprtBin    
   {
   public:
     OprtSub();
@@ -104,7 +104,7 @@ MUP_NAMESPACE_START
   /** \brief Callback object for implementing the multiplications of noncomplex values.
       \ingroup binop
   */
-  class OprtMul : public IOprtBin    
+  class MUP_EXPORT OprtMul : public IOprtBin    
   {
   public:
     OprtMul();
@@ -117,7 +117,7 @@ MUP_NAMESPACE_START
   /** \brief Callback object for implementing the division of noncomplex values.
       \ingroup binop
   */
-  class OprtDiv : public IOprtBin    
+  class MUP_EXPORT OprtDiv : public IOprtBin    
   {
   public:
     OprtDiv();
@@ -130,7 +130,7 @@ MUP_NAMESPACE_START
   /** \brief Raise x to the power of y.
       \ingroup binop
   */
-  class OprtPow : public IOprtBin
+  class MUP_EXPORT OprtPow : public IOprtBin
   {
   public:
     

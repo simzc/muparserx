@@ -51,7 +51,7 @@ MUP_NAMESPACE_START
   //-----------------------------------------------------------------------------------------------
   /** \brief Default implementation of a multidimensional index operator.
   */
-  class OprtIndex : public ICallback
+  class MUP_EXPORT OprtIndex : public ICallback
   {
   public:
     OprtIndex();

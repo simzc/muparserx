@@ -31,6 +31,7 @@
 #ifndef MUP_FUNC_STR_H
 #define MUP_FUNC_STR_H
 
+#include "MupApiCE.h"
 #include "mpICallback.h"
 
 
@@ -40,7 +41,7 @@ MUP_NAMESPACE_START
   /** \brief Callback object for determining the length of a string. 
       \ingroup functions
   */
-  class FunStrLen : public ICallback
+  class MUP_EXPORT FunStrLen : public ICallback
   {
   public:
     FunStrLen();
@@ -53,7 +54,7 @@ MUP_NAMESPACE_START
   /** \brief Convert a string to upper case letters. 
       \ingroup functions  
   */
-  class FunStrToUpper : public ICallback
+  class MUP_EXPORT FunStrToUpper : public ICallback
   {
   public:
     FunStrToUpper();
@@ -66,7 +67,7 @@ MUP_NAMESPACE_START
   /** \brief Convert a string to lower case letters.
       \ingroup functions
   */
-  class FunStrToLower : public ICallback
+  class MUP_EXPORT FunStrToLower : public ICallback
   {
   public:
     FunStrToLower();
@@ -79,7 +80,7 @@ MUP_NAMESPACE_START
   /** \brief Parse string to a floating point value. 
       \ingroup functions  
   */
-  class FunStrToDbl : public ICallback
+  class MUP_EXPORT FunStrToDbl : public ICallback
   {
   public:
     FunStrToDbl ();

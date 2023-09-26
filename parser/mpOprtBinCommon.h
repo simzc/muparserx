@@ -49,7 +49,7 @@
 MUP_NAMESPACE_START
 
 
-class OprtStrAdd : public IOprtBin
+class MUP_EXPORT OprtStrAdd : public IOprtBin
 {
 public:
     OprtStrAdd();
@@ -62,7 +62,7 @@ public:
 /** \brief Callback object for testing if two values are equal.
     \ingroup binop
     */
-class OprtEQ : public IOprtBin
+class MUP_EXPORT OprtEQ : public IOprtBin
 {
 public:
     OprtEQ();
@@ -75,7 +75,7 @@ public:
 /** \brief Callback object for testing if two values are not equal.
     \ingroup binop
     */
-class OprtNEQ : public IOprtBin
+class MUP_EXPORT OprtNEQ : public IOprtBin
 {
 public:
     OprtNEQ();
@@ -88,7 +88,7 @@ public:
 /** \brief Callback object class for the "Less than" operator.
     \ingroup binop
     */
-class OprtLT : public IOprtBin
+class MUP_EXPORT OprtLT : public IOprtBin
 {
 public:
     OprtLT();
@@ -101,7 +101,7 @@ public:
 /** \brief Callback object class for the "Greater than" operator.
     \ingroup binop
     */
-class OprtGT : public IOprtBin
+class MUP_EXPORT OprtGT : public IOprtBin
 {
 public:
     OprtGT();
@@ -114,7 +114,7 @@ public:
 /** \brief Callback object class for the "Less or equal" operator.
     \ingroup binop
     */
-class OprtLE : public IOprtBin
+class MUP_EXPORT OprtLE : public IOprtBin
 {
 public:
     OprtLE();
@@ -127,7 +127,7 @@ public:
 /** \brief Callback object class for the "Greater or or equal" operator.
     \ingroup binop
     */
-class OprtGE : public IOprtBin
+class MUP_EXPORT OprtGE : public IOprtBin
 {
 public:
     OprtGE();
@@ -140,7 +140,7 @@ public:
 /** \brief Callback class for a logic and operator.
     \ingroup binop
     */
-class OprtAnd : public IOprtBin
+class MUP_EXPORT OprtAnd : public IOprtBin
 {
 public:
     OprtAnd();
@@ -153,7 +153,7 @@ public:
 /** \brief Callback class for a logic or operator.
     \ingroup binop
     */
-class OprtOr : public IOprtBin
+class MUP_EXPORT OprtOr : public IOprtBin
 {
 public:
     OprtOr();
@@ -166,7 +166,7 @@ public:
 /** \brief Callback class for a logical or operator.
     \ingroup binop
 */
-class OprtLogicOr : public IOprtBin
+class MUP_EXPORT OprtLogicOr : public IOprtBin
 {
 public:
     OprtLogicOr(const char_type* szIdent = _T("||"));
@@ -179,7 +179,7 @@ public:
 /** \brief Callback class for a logical and operator.
     \ingroup binop
 */
-class OprtLogicAnd : public IOprtBin
+class MUP_EXPORT OprtLogicAnd : public IOprtBin
 {
 public:
     OprtLogicAnd(const char_type* szIdent = _T("&&"));
@@ -192,7 +192,7 @@ public:
 /** \brief Callback class for the shift left operator.
     \ingroup binop
     */
-class OprtShl : public IOprtBin
+class MUP_EXPORT OprtShl : public IOprtBin
 {
 public:
     OprtShl();
@@ -205,7 +205,7 @@ public:
 /** \brief Callback class for the shift right operator.
     \ingroup binop
     */
-class OprtShr : public IOprtBin
+class MUP_EXPORT OprtShr : public IOprtBin
 {
 public:
     OprtShr();
@@ -219,7 +219,7 @@ public:
            point values.
            \ingroup infix
            */
-class OprtCastToFloat : public IOprtInfix
+class MUP_EXPORT OprtCastToFloat : public IOprtInfix
 {
 public:
     OprtCastToFloat();
@@ -232,7 +232,7 @@ public:
 /** \brief Callback for an operator allowing to cast values to integer values.
     \ingroup infix
 */
-class OprtCastToInt : public IOprtInfix
+class MUP_EXPORT OprtCastToInt : public IOprtInfix
 {
 public:
     OprtCastToInt();

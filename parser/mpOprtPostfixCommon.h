@@ -21,7 +21,7 @@ MUP_NAMESPACE_START
   /** \brief Calculate factorial of a non-negative integer.
       \ingroup postop
   */
-  class OprtFact : public IOprtPostfix
+  class MUP_EXPORT OprtFact : public IOprtPostfix
   {
   public:
 
@@ -36,7 +36,7 @@ MUP_NAMESPACE_START
   /** \brief Returns percentage of given number.
       \ingroup postop
   */
-  class OprtPercentage : public IOprtPostfix
+  class MUP_EXPORT OprtPercentage : public IOprtPostfix
   {
     public:
 

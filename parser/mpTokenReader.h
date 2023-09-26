@@ -54,7 +54,7 @@
 MUP_NAMESPACE_START
 
   /** \brief Token reader for the ParserXBase class. */
-  class TokenReader
+  class MUP_EXPORT TokenReader
   {
   friend class ParserXBase;
 

@@ -48,7 +48,7 @@ MUP_NAMESPACE_START
   /** \brief Interface for binary and ternary operators
       \ingroup binop
   */
-  class IPrecedence
+  class MUP_EXPORT IPrecedence
   {
   public:
     virtual ~IPrecedence(){}

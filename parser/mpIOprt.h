@@ -39,6 +39,7 @@
 #ifndef MUP_IPARSER_OPERATOR_H
 #define MUP_IPARSER_OPERATOR_H
 
+#include "MupApiCE.h"
 #include "mpICallback.h"
 #include "mpIPrecedence.h"
 
@@ -52,8 +53,8 @@ MUP_NAMESPACE_START
       All classes representing binary operator callbacks must be derived from
       this base class.
     */
-    class IOprtBin : public ICallback,
-                     public IPrecedence
+    class MUP_EXPORT IOprtBin : public ICallback,
+                                public IPrecedence
     {
     public:
 
@@ -79,7 +80,7 @@ MUP_NAMESPACE_START
     /** \brief Interface for unary postfix operators.
         \ingroup postfix
     */
-    class IOprtPostfix : public ICallback
+    class MUP_EXPORT IOprtPostfix : public ICallback
     {
     public:
         IOprtPostfix(const char_type *a_szIdent);
@@ -92,8 +93,8 @@ MUP_NAMESPACE_START
     /** \brief Interface for unary infix operators.
         \ingroup infix
     */
-    class IOprtInfix : public ICallback,
-                       public IPrecedence
+    class MUP_EXPORT IOprtInfix : public ICallback,
+                                  public IPrecedence
     {
     public:
       IOprtInfix(const char_type *a_szIdent, int nPrec);

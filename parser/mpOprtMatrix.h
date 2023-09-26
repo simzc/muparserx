@@ -45,7 +45,7 @@
 MUP_NAMESPACE_START
 
   //-----------------------------------------------------------------------------------------------
-  class OprtTranspose : public IOprtPostfix
+  class MUP_EXPORT OprtTranspose : public IOprtPostfix
   {
   public:
     OprtTranspose();
@@ -57,7 +57,7 @@ MUP_NAMESPACE_START
   //-----------------------------------------------------------------------------------------------
   /** \brief On the fly array creation using the curly bracket operator.
   */
-  class OprtCreateArray : public ICallback
+  class MUP_EXPORT OprtCreateArray : public ICallback
   {
   public:
       OprtCreateArray();
@@ -67,7 +67,7 @@ MUP_NAMESPACE_START
   };
 
   //-----------------------------------------------------------------------------------------------
-  class OprtColon : public IOprtBin
+  class MUP_EXPORT OprtColon : public IOprtBin
   {
   public:
     OprtColon();

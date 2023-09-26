@@ -35,6 +35,7 @@
 #ifndef MUP_FUNC_NON_CMPLX_H
 #define MUP_FUNC_NON_CMPLX_H
 
+#include "MupApiCE.h"
 #include "mpICallback.h"
 
 /** \defgroup functions Function callback objects.
@@ -46,7 +47,7 @@
 MUP_NAMESPACE_START
 
 #define MUP_UNARY_FUNC_DEF(CLASS)                                          \
-    class CLASS : public ICallback                                         \
+    class MUP_EXPORT CLASS : public ICallback                              \
     {                                                                      \
     public:                                                                \
       CLASS();                                                             \
@@ -82,8 +83,8 @@ MUP_NAMESPACE_START
     MUP_UNARY_FUNC_DEF(FunAbs)
 #undef MUP_UNARY_FUNC_DEF
 
-#define MUP_BINARY_FUNC_DEF(CLASS)                                          \
-    class CLASS : public ICallback                                         \
+#define MUP_BINARY_FUNC_DEF(CLASS)                                         \
+    class MUP_EXPORT CLASS : public ICallback                              \
     {                                                                      \
     public:                                                                \
       CLASS();                                                             \

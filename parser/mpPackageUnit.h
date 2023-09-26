@@ -39,7 +39,7 @@
 MUP_NAMESPACE_START
 
 #define MUP_POSTFIX_DEF(CLASS)                                             \
-    class CLASS : public IOprtPostfix                                      \
+    class MUP_EXPORT CLASS : public IOprtPostfix                           \
     {                                                                      \
     public:                                                                \
       CLASS(IPackage* pPackage=nullptr);                                      \
@@ -59,7 +59,7 @@ MUP_POSTFIX_DEF(OprtGiga)
 
 //------------------------------------------------------------------------------
 /** \brief Package for installing unit postfix operators into muParserX. */
-class PackageUnit : public IPackage
+class MUP_EXPORT PackageUnit : public IPackage
 {
 friend class std::unique_ptr<PackageUnit>;
 

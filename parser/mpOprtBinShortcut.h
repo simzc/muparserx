@@ -52,7 +52,7 @@ MUP_NAMESPACE_START
 /** \brief Callback class for a logical or operator. begin
 	\ingroup binop
 */
-class OprtShortcutLogicOrBegin : public IOprtBinShortcut
+class MUP_EXPORT OprtShortcutLogicOrBegin : public IOprtBinShortcut
 {
 public:
 	OprtShortcutLogicOrBegin(const char_type* szIdent = _T("||"));
@@ -64,7 +64,7 @@ public:
 /** \brief Callback class for a logical or operator. end
 	\ingroup binop
 */
-class OprtShortcutLogicOrEnd : public IOprtBinShortcut
+class MUP_EXPORT OprtShortcutLogicOrEnd : public IOprtBinShortcut
 {
 public:
 	OprtShortcutLogicOrEnd(const char_type* szIdent = _T("||"));
@@ -76,7 +76,7 @@ public:
 /** \brief Callback class for a logical and operator. begin
 	\ingroup binop
 	*/
-class OprtShortcutLogicAndBegin : public IOprtBinShortcut
+class MUP_EXPORT OprtShortcutLogicAndBegin : public IOprtBinShortcut
 {
 public:
 	OprtShortcutLogicAndBegin(const char_type* szIdent = _T("&&"));
@@ -87,7 +87,7 @@ public:
 /** \brief Callback class for a logical and operator. begin
 	\ingroup binop
 	*/
-class OprtShortcutLogicAndEnd : public IOprtBinShortcut
+class MUP_EXPORT OprtShortcutLogicAndEnd : public IOprtBinShortcut
 {
 public:
 	OprtShortcutLogicAndEnd(const char_type* szIdent = _T("&&"));

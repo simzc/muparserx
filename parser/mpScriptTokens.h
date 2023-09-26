@@ -37,13 +37,13 @@
 */
 
 #include "mpIToken.h"
-
+#include "MupApiCE.h"
 
 MUP_NAMESPACE_START
 
   //---------------------------------------------------------------------------
   /** \brief A class for encapsulation a newline token. */
-  class TokenNewline : public IToken
+  class MUP_EXPORT TokenNewline : public IToken
   {
   public:
 

@@ -36,7 +36,7 @@
 </pre>
 */
 #include <vector>
-
+#include "MupApiCE.h"
 #include "mpFwdDecl.h"
 
 
@@ -50,7 +50,7 @@ MUP_NAMESPACE_START
     objects in an internal buffer for later reuse. By eliminating new/delete
     calls the parser is sped up approximately by factor 3-4.
   */
-  class ValueCache
+  class MUP_EXPORT ValueCache
   {
   public:
     ValueCache(int size=10);

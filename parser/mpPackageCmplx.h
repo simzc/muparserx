@@ -35,13 +35,13 @@
 #include <memory>
 #include "mpIPackage.h"
 #include "mpIOprt.h"
-
+#include "MupApiCE.h"
 
 MUP_NAMESPACE_START
 
 //------------------------------------------------------------------------------
 /** \brief Package for installing complex functions and operators. */
-class PackageCmplx: public IPackage
+class MUP_EXPORT PackageCmplx: public IPackage
 {
 friend class std::unique_ptr<PackageCmplx>;
 

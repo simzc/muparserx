@@ -40,6 +40,7 @@
 #define MU_IPARSER_CALLBACK_H
 
 //--- muParserX framework --------------------------------------------
+#include "MupApiCE.h"
 #include "mpIToken.h"
 #include "mpIPackage.h"
 
@@ -50,7 +51,7 @@ MUP_NAMESPACE_START
     
     All Parser functions and operators must implement this interface.
   */
-  class ICallback : public IToken
+  class MUP_EXPORT ICallback : public IToken
   {
   public:
       typedef ParserXBase parent_type;  

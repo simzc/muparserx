@@ -39,11 +39,11 @@
 #include <vector>
 #include "mpFwdDecl.h"
 #include "mpTypes.h"
-
+#include "MupApiCE.h"
 
 MUP_NAMESPACE_START
 
-class IPackage
+class MUP_EXPORT IPackage
 {
 public:
 

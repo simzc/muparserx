@@ -6,13 +6,13 @@
 
 #include "mpDefines.h"
 #include "mpTypes.h"
-
+#include "MupApiCE.h"
 
 MUP_NAMESPACE_START
 
   //-----------------------------------------------------------------------------------------------
   /** \brief Base class for Parser Message providing classes. */
-  class ParserMessageProviderBase
+  class MUP_EXPORT ParserMessageProviderBase
   {
   friend class std::unique_ptr<ParserMessageProviderBase>;
 
@@ -36,7 +36,7 @@ MUP_NAMESPACE_START
 
   //-----------------------------------------------------------------------------------------------
   /** \brief English versions of parser messages. */
-  class ParserMessageProviderEnglish : public ParserMessageProviderBase
+  class MUP_EXPORT ParserMessageProviderEnglish : public ParserMessageProviderBase
   {
   public:
     ParserMessageProviderEnglish();
@@ -47,7 +47,7 @@ MUP_NAMESPACE_START
 
   //-----------------------------------------------------------------------------------------------
   /** \brief German versions of parser messages. */
-  class ParserMessageProviderGerman : public ParserMessageProviderBase
+  class MUP_EXPORT ParserMessageProviderGerman : public ParserMessageProviderBase
   {
   public:
     ParserMessageProviderGerman();

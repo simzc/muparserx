@@ -35,6 +35,7 @@
 #ifndef MUP_FUNC_MATRIX_H
 #define MUP_FUNC_MATRIX_H
 
+#include "MupApiCE.h"
 #include "mpICallback.h"
 
 
@@ -45,7 +46,7 @@ MUP_NAMESPACE_START
              entirely of ones.
       \ingroup functions
   */
-  class FunMatrixOnes : public ICallback
+  class MUP_EXPORT FunMatrixOnes : public ICallback
   {
   public:
     FunMatrixOnes();
@@ -60,7 +61,7 @@ MUP_NAMESPACE_START
              entirely of zeros.
       \ingroup functions
   */
-  class FunMatrixZeros : public ICallback
+  class MUP_EXPORT FunMatrixZeros : public ICallback
   {
   public:
     FunMatrixZeros();
@@ -74,7 +75,7 @@ MUP_NAMESPACE_START
   /** \brief Parser callback object for creating unity matrices.
       \ingroup functions
   */
-  class FunMatrixEye : public ICallback
+  class MUP_EXPORT FunMatrixEye : public ICallback
   {
   public:
     FunMatrixEye();
@@ -89,7 +90,7 @@ MUP_NAMESPACE_START
   /** \brief Determines the dimensions of a matrix.
       \ingroup functions
   */
-  class FunMatrixSize : public ICallback
+  class MUP_EXPORT FunMatrixSize : public ICallback
   {
   public:
     FunMatrixSize();

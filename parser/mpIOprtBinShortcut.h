@@ -36,6 +36,7 @@
 </pre>
 */
 
+#include "MupApiCE.h"
 #include "mpIToken.h"
 #include "mpIPrecedence.h"
 
@@ -44,7 +45,7 @@ MUP_NAMESPACE_START
 
   //---------------------------------------------------------------------------
   /** \brief A class for encapsulation if-then-else tokens. */
-  class IOprtBinShortcut : public IToken, public IPrecedence
+  class MUP_EXPORT IOprtBinShortcut : public IToken, public IPrecedence
   {
   public:
       IOprtBinShortcut(ECmdCode eCmd, const char_type *a_szIdent, int nPrec, EOprtAsct m_eAsc);

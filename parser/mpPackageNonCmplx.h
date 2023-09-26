@@ -41,7 +41,7 @@ MUP_NAMESPACE_START
 
 //------------------------------------------------------------------------------
 /** \brief Package for installing complex functions and operators. */
-class PackageNonCmplx: public IPackage
+class MUP_EXPORT PackageNonCmplx: public IPackage
 {
 friend class std::unique_ptr<PackageNonCmplx>;
 

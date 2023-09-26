@@ -45,7 +45,7 @@
 MUP_NAMESPACE_START
   
   //---------------------------------------------------------------------------------------------
-  class ParserErrorMsg 
+  class MUP_EXPORT ParserErrorMsg 
   {
   public:
     ~ParserErrorMsg();
@@ -68,7 +68,7 @@ MUP_NAMESPACE_START
     
       This struct contains the data associated with parser erros. 
   */
-  struct ErrorContext
+  struct MUP_EXPORT ErrorContext
   {
     /** \brief Creates an empty ErrorContext object.
       
@@ -99,7 +99,7 @@ MUP_NAMESPACE_START
 
     Part of the math parser package.
   */
-  class ParserError
+  class MUP_EXPORT ParserError
   {
   private:
       //------------------------------------------------------------------------------

@@ -41,7 +41,7 @@ MUP_NAMESPACE_START
 
     /** \brief Test cases for unit testing the parser framework.
     */
-    class ParserTester // final
+    class MUP_EXPORT ParserTester // final
     {
     private:
         static int c_iCount;

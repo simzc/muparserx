@@ -40,6 +40,7 @@
 #include <list>
 #include "mpTypes.h"
 #include "mpFwdDecl.h"
+#include "MupApiCE.h"
 
 MUP_NAMESPACE_START
 
@@ -51,7 +52,7 @@ MUP_NAMESPACE_START
       base tokens like brackets. ´The IToken baseclass implements reference 
       counting. Only TokenPtr<...> templates may be used as pointers to tokens.
   */
-  class IToken
+  class MUP_EXPORT IToken
   {
   friend std::ostream& operator<<(std::ostream &a_Stream, const IToken &a_Val);
   friend std::wostream& operator<<(std::wostream &a_Stream, const IToken &a_Val);
@@ -135,7 +136,7 @@ MUP_NAMESPACE_START
   //---------------------------------------------------------------------------
   /** \brief Default token implentation. 
   */
-  class GenericToken : public IToken
+  class MUP_EXPORT GenericToken : public IToken
   {
   public:
       GenericToken(ECmdCode a_iCode, string_type a_sIdent);
@@ -148,7 +149,7 @@ MUP_NAMESPACE_START
 
   //------------------------------------------------------------------------------
   template<typename T>
-  class TokenPtr
+  class MUP_EXPORT TokenPtr
   {
   public:
      

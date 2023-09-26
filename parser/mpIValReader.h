@@ -55,7 +55,7 @@ MUP_NAMESPACE_START
     Value readers are objects used for identifying values 
     in an expression.
   */
-  class IValueReader
+  class MUP_EXPORT IValueReader
   {
   public:
 

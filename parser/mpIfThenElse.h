@@ -39,6 +39,7 @@
 #ifndef MUP_IF_THEN_ELSE_H
 #define MUP_IF_THEN_ELSE_H
 
+#include "MupApiCE.h"
 #include "mpIToken.h"
 #include "mpIPrecedence.h"
 
@@ -47,8 +48,8 @@ MUP_NAMESPACE_START
 
   //---------------------------------------------------------------------------
   /** \brief A class for encapsulation if-then-else tokens. */
-  class TokenIfThenElse : public IToken,
-                          public IPrecedence
+  class MUP_EXPORT TokenIfThenElse : public IToken,
+                                     public IPrecedence
   {
   public:
 

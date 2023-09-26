@@ -52,7 +52,7 @@ MUP_NAMESPACE_START
   /** \brief Callback for the negative sign operator.
       \ingroup infix
   */
-  class OprtSignCmplx : public IOprtInfix
+  class MUP_EXPORT OprtSignCmplx : public IOprtInfix
   {
   public:
     OprtSignCmplx();
@@ -65,7 +65,7 @@ MUP_NAMESPACE_START
   /** \brief Parser callback for implementing an addition of two complex values.
       \ingroup binop
   */
-  class OprtAddCmplx : public IOprtBin    
+  class MUP_EXPORT OprtAddCmplx : public IOprtBin    
   {
   public:
     OprtAddCmplx();
@@ -78,7 +78,7 @@ MUP_NAMESPACE_START
   /** \brief Parser callback for implementing the subtraction of two complex values.
       \ingroup binop
   */
-  class OprtSubCmplx : public IOprtBin    
+  class MUP_EXPORT OprtSubCmplx : public IOprtBin    
   {
   public:
     OprtSubCmplx();
@@ -91,7 +91,7 @@ MUP_NAMESPACE_START
   /** \brief Callback object for implementing the multiplications of complex values.
       \ingroup binop
   */
-  class OprtMulCmplx : public IOprtBin    
+  class MUP_EXPORT OprtMulCmplx : public IOprtBin    
   {
   public:
     OprtMulCmplx();
@@ -104,7 +104,7 @@ MUP_NAMESPACE_START
   /** \brief Callback object for implementing the division of complex values.
       \ingroup binop
   */
-  class OprtDivCmplx : public IOprtBin    
+  class MUP_EXPORT OprtDivCmplx : public IOprtBin    
   {
   public:
     OprtDivCmplx();
@@ -117,7 +117,7 @@ MUP_NAMESPACE_START
   /** \brief Raise x to the power of y.
       \ingroup binop
   */
-  class OprtPowCmplx : public IOprtBin
+  class MUP_EXPORT OprtPowCmplx : public IOprtBin
   {
   public:
     OprtPowCmplx();

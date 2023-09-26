@@ -40,7 +40,7 @@
 #define MUP_COMPLEX_FUNCTIONS_H
 
 #include "mpICallback.h"
-
+#include "MupApiCE.h"
 
 MUP_NAMESPACE_START
 
@@ -48,7 +48,7 @@ MUP_NAMESPACE_START
 /** \brief Parser callback object for returning the real part of a complex number.
 	\ingroup functions
 */
-class FunCmplxReal : public ICallback
+class MUP_EXPORT FunCmplxReal : public ICallback
 {
 public:
 	FunCmplxReal();
@@ -62,7 +62,7 @@ public:
 /** \brief Parser callback object for returning the imaginary part of a complex number.
 	\ingroup functions
 */
-class FunCmplxImag : public ICallback
+class MUP_EXPORT FunCmplxImag : public ICallback
 {
 public:
 	FunCmplxImag();
@@ -76,7 +76,7 @@ public:
 		   the complex number.
 	\ingroup functions
 */
-class FunCmplxConj : public ICallback
+class MUP_EXPORT FunCmplxConj : public ICallback
 {
 public:
 	FunCmplxConj();
@@ -91,7 +91,7 @@ public:
 		   (or angular component) of a complex number, expressed in radians.
 	\ingroup functions
 */
-class FunCmplxArg : public ICallback
+class MUP_EXPORT FunCmplxArg : public ICallback
 {
 public:
 	FunCmplxArg();
@@ -105,7 +105,7 @@ public:
 		   complex number phase angle.
 	\ingroup functions
 */
-class FunCmplxNorm : public ICallback
+class MUP_EXPORT FunCmplxNorm : public ICallback
 {
 public:
 	FunCmplxNorm();
@@ -115,7 +115,7 @@ public:
 };
 
 //-----------------------------------------------------------------------
-class FunCmplxCos : public ICallback
+class MUP_EXPORT FunCmplxCos : public ICallback
 {
 public:
 	FunCmplxCos();
@@ -125,7 +125,7 @@ public:
 };
 
 //-----------------------------------------------------------------------
-class FunCmplxSin : public ICallback
+class MUP_EXPORT FunCmplxSin : public ICallback
 {
 public:
 	FunCmplxSin();
@@ -135,7 +135,7 @@ public:
 };
 
 //-----------------------------------------------------------------------
-class FunCmplxCosH : public ICallback
+class MUP_EXPORT FunCmplxCosH : public ICallback
 {
 public:
 	FunCmplxCosH();
@@ -145,7 +145,7 @@ public:
 };
 
 //-----------------------------------------------------------------------
-class FunCmplxSinH : public ICallback
+class MUP_EXPORT FunCmplxSinH : public ICallback
 {
 public:
 	FunCmplxSinH();
@@ -155,7 +155,7 @@ public:
 };
 
 //-----------------------------------------------------------------------
-class FunCmplxTan : public ICallback
+class MUP_EXPORT FunCmplxTan : public ICallback
 {
 public:
 	FunCmplxTan();
@@ -165,7 +165,7 @@ public:
 };
 
 //-----------------------------------------------------------------------
-class FunCmplxTanH : public ICallback
+class MUP_EXPORT FunCmplxTanH : public ICallback
 {
 public:
 	FunCmplxTanH();
@@ -175,7 +175,7 @@ public:
 };
 
 //-----------------------------------------------------------------------
-class FunCmplxSqrt : public ICallback
+class MUP_EXPORT FunCmplxSqrt : public ICallback
 {
 public:
 	FunCmplxSqrt();
@@ -186,7 +186,7 @@ public:
 
 
 //-----------------------------------------------------------------------
-class FunCmplxExp : public ICallback
+class MUP_EXPORT FunCmplxExp : public ICallback
 {
 public:
 	FunCmplxExp();
@@ -196,7 +196,7 @@ public:
 };
 
 //-----------------------------------------------------------------------
-class FunCmplxLn : public ICallback
+class MUP_EXPORT FunCmplxLn : public ICallback
 {
 public:
 	FunCmplxLn();
@@ -206,7 +206,7 @@ public:
 };
 
 //-----------------------------------------------------------------------
-class FunCmplxLog : public ICallback
+class MUP_EXPORT FunCmplxLog : public ICallback
 {
 public:
 	FunCmplxLog();
@@ -216,7 +216,7 @@ public:
 };
 
 //-----------------------------------------------------------------------
-class FunCmplxLog10 : public ICallback
+class MUP_EXPORT FunCmplxLog10 : public ICallback
 {
 public:
 	FunCmplxLog10();
@@ -226,7 +226,7 @@ public:
 };
 
 //-----------------------------------------------------------------------
-class FunCmplxLog2 : public ICallback
+class MUP_EXPORT FunCmplxLog2 : public ICallback
 {
 public:
 	FunCmplxLog2();
@@ -236,7 +236,7 @@ public:
 };
 
 //-----------------------------------------------------------------------
-class FunCmplxAbs : public ICallback
+class MUP_EXPORT FunCmplxAbs : public ICallback
 {
 public:
 
@@ -247,7 +247,7 @@ public:
 };
 
 //-----------------------------------------------------------------------
-class FunCmplxPow : public ICallback
+class MUP_EXPORT FunCmplxPow : public ICallback
 {
 public:
 

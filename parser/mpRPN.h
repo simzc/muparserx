@@ -34,7 +34,7 @@
 
 #include "mpFwdDecl.h"
 #include "mpTypes.h"
-
+#include "MupApiCE.h"
 
 MUP_NAMESPACE_START
 
@@ -42,7 +42,7 @@ MUP_NAMESPACE_START
   /** \brief A class representing the reverse polnish notation of the expression. 
   
   */
-  class RPN
+  class MUP_EXPORT RPN
   {
   public:
     

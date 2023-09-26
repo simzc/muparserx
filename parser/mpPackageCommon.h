@@ -35,7 +35,7 @@
 #include <memory>
 #include "mpIPackage.h"
 #include "mpIOprt.h"
-
+#include "MupApiCE.h"
 
 MUP_NAMESPACE_START
 
@@ -43,7 +43,7 @@ MUP_NAMESPACE_START
 /** \brief Package for installing operators and functions which
            are always present. 
 */
-class PackageCommon: public IPackage
+class MUP_EXPORT PackageCommon: public IPackage
 {
 friend class std::unique_ptr<PackageCommon>;
 
