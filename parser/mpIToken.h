@@ -54,8 +54,8 @@ MUP_NAMESPACE_START
   */
   class MUP_EXPORT IToken
   {
-  friend std::ostream& operator<<(std::ostream &a_Stream, const IToken &a_Val);
-  friend std::wostream& operator<<(std::wostream &a_Stream, const IToken &a_Val);
+  MUP_EXPORT friend std::ostream& operator<<(std::ostream &a_Stream, const IToken &a_Val);
+  MUP_EXPORT friend std::wostream& operator<<(std::wostream &a_Stream, const IToken &a_Val);
 
   friend class TokenPtr<IToken>;
   friend class TokenPtr<IValue>;
