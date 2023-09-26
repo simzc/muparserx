@@ -49,7 +49,7 @@ MUP_NAMESPACE_START
     This is the class that implements the parser. It installs all functions
     and operatore and defines the constants.
   */
-  class ParserX : public ParserXBase
+  class MUP_EXPORT ParserX : public ParserXBase
   {
   public:
     ParserX(unsigned ePackages = pckALL_COMPLEX);

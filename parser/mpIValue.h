@@ -37,6 +37,7 @@
 */
 #include "mpIToken.h"
 #include "mpFwdDecl.h"
+#include "MupApiCE.h"
 
 MUP_NAMESPACE_START
 
@@ -44,7 +45,7 @@ MUP_NAMESPACE_START
 
   IValue is the common base class of both the Value and Variable classes.
 */
-class IValue : public IToken
+class MUP_EXPORT IValue : public IToken
 {
 	friend std::ostream& operator<<(std::ostream& a_Stream, const IValue& a_Val);
 	friend std::wostream& operator<<(std::wostream& a_Stream, const IValue& a_Val);

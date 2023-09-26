@@ -2,5 +2,6 @@
     "files.associations": {
         "type_traits": "cpp",
         "limits": "cpp"
-    }
+    },
+    "editor.fontSize": 18.5
 }

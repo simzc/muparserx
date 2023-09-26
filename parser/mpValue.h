@@ -52,7 +52,7 @@ MUP_NAMESPACE_START
     This class represents a value to be used with muParserX. It's a Variant like
     class able to store a variety of types.
   */
-  class Value : public IValue
+  class MUP_EXPORT Value : public IValue
   {
   public:
 

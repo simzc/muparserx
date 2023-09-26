@@ -48,7 +48,7 @@ MUP_NAMESPACE_START
     This class stores a pointer to a value object and refers all
     operations to this value object.
   */
-  class Variable : public IValue
+  class MUP_EXPORT Variable : public IValue
   {
   public:
 

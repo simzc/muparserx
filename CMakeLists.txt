@@ -40,11 +40,18 @@ endif(MSVC)
 ########################################################################
 file(GLOB MUPARSERX_SOURCES "${MUPARSERX_SOURCE_DIR}/*.cpp")
 include_directories(${MUPARSERX_SOURCE_DIR})
-add_library(muparserx ${MUPARSERX_SOURCES})
+add_library(muparserx SHARED ${MUPARSERX_SOURCES})
 set_target_properties(muparserx PROPERTIES VERSION ${MUPARSERX_VERSION})
 set_property(TARGET muparserx PROPERTY POSITION_INDEPENDENT_CODE TRUE)
 set_target_properties(muparserx PROPERTIES SOVERSION ${MUPARSERX_VERSION})
 set_target_properties(muparserx PROPERTIES VERSION ${MUPARSERX_VERSION})
+
+target_compile_definitions(muparserx PRIVATE "MUP_API_COMPILE")
+
+if(CMAKE_CXX_COMPILER_ID MATCHES "GNU" OR CMAKE_CXX_COMPILER_ID MATCHES "Clang" OR CMAKE_CXX_COMPILER_ID MATCHES "MINGW")
+    target_link_libraries(muparserx -static-libgcc -static-libstdc++)
+    message(STATUS "Statically linking cxx dependencies for target muparserx.")
+endif()
 
 #link with lib math when found
 find_library(

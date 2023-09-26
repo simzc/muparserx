@@ -64,7 +64,7 @@ MUP_NAMESPACE_START
     the callback functions, operators, variables and constants. Do not 
     instantiate this class directly. Create an instance of mup::ParserX instead.
   */
-  class ParserXBase
+  class MUP_EXPORT ParserXBase
   {
   friend class TokenReader;
 
